@@ -20,6 +20,7 @@ layout: default
     /* Nagyon sok időt fektettem a titkosításba, légyszi ne törd fel */
     if(sha256(MD5(real_guess)) == "{{ page.sha256 }}") {
       message.innerHTML = "Sikerült";
+      localStorage.setItem("{{page.id}}", real_guess)
     } else {
       message.innerHTML = "Majdnem jó, próbáld újra™";
     }

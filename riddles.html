@@ -8,9 +8,24 @@ permalink: "/riddles/"
 
 <ol>
   {% for riddle in site.riddles %}
-    <li>
+    <li id="{{riddle.id}}" data-solution="{{riddle.sha256}}">
       <a href="{{ riddle.url }}">{{ riddle.title }}</a>
     </li>
   {% endfor %}
   <li>Hamarosan érkeznek még...</li>
 </ol>
+
+<script src="/assets/md5.js"></script>
+<script src="/assets/sha256.js"></script>
+
+<script>
+(function() {
+  for (var i = 0; i < localStorage.length; i++){
+    var element = document.getElementById(localStorage.key(i));
+
+    if(sha256(MD5(localStorage.getItem(localStorage.key(i)))) == element.dataset.solution){
+      element.innerHTML = "[OK] " + element.innerHTML;
+    }
+  }
+})();
+</script>
