@@ -9,4 +9,6 @@ Sziasztok!
 
 Elérhetővé vált(ak) az első riddlek. Sok sikert a megoldásukhoz!
 
+A riddle-ök megtekintéséért felelősséget nem vállalunk. Megoldásuk minden esetben egy magyar szó, kifejezés vagy mondat. Ékezeteket és írásjeleket ignorálja az ellenőrző szkript.
+
 A rendezők
