@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Qpaweb állapota"
+date:   2018-09-10 10:56:30 +0200
+categories: qpaweb
+---
+
+Sziasztok!
+
+Örömel értesítünk titeket, hogy a [qpaweb][qpaweb-link] még mindig nem indult el. Addig is ez az oldal teljes funkcionalitással üzemel, látogassátok gyakran a frissülő hírekért.
+
+Amennyiben hibát észleltek, vagy új tartalmat adnátok hozzá, keressetek személyesen, vagy látogassátok meg a [github][github-link] oldalát.
+
+[qpaweb-link]: https://qpa.sch.bme.hu
+[github-link]: https://github.com/kiskoza/qpaweb
