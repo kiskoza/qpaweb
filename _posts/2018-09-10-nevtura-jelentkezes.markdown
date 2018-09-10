@@ -6,7 +6,7 @@ categories: nevtura
 ---
 Sziasztok!
 
-Örülünk, hogy ilyen sokan érdeklődtetek az előzetes Nevtúra bejárásunk iránt. Akinek még nem ment el a kedve az útvonaltól, azok [ezen a linken][doodle-jelenkezes] tudnak jelentkezni.
+Örülünk, hogy ilyen sokan érdeklődtetek az előzetes Nevtúra bejárásunk iránt. Akinek még nem ment el a kedve az útvonaltól, azok [ezen a linken][doodle-jelentkezes] tudnak jelentkezni.
 
 A rendezők
 
