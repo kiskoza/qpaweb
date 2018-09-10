@@ -1,0 +1,13 @@
+---
+layout: page
+title: "Riddles"
+permalink: "/riddles/"
+---
+
+<ol>
+  {% for riddle in site.riddles %}
+    <li>
+      <a href="{{ riddle.url }}">{{ riddle.title }}</a>
+    </li>
+  {% endfor %}
+</ol>
