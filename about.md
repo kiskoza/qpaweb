@@ -1,18 +1,27 @@
 ---
 layout: page
-title: About
+title: Balogh Ferenc: Magam
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Nem vagyok lovag, sem semmilyen daliás,
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+egy fiatal elme, agg kifáradt portás...
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Kortárs alakban, biztosan csak véletlen,
 
+tudással, icipicit gyengén képzetten,
 
-[jekyll-organization]: https://github.com/jekyll
+éretlen gyermek, kit az évek edzenek,
+
+tanulok, s nem is, tudom, sokszor tévedek...
+
+Érdek nélkül szeretek, de lehet, engem
+
+nem szeret senki, mindhiába igyekszem.
+
+Próbálok meglenni minden nap viccesen,
+
+De néha úgy érzem, hogy a saját lelkem, -
+
+talán már egyáltalán nem is ismerem...
