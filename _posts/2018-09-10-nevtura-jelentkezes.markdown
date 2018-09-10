@@ -2,7 +2,7 @@
 layout: post
 title:  "Nevtúra jelentkezés"
 date:   2018-09-10 09:25:30 +0200
-categories: nevtúra
+categories: nevtura
 ---
 Sziasztok!
 

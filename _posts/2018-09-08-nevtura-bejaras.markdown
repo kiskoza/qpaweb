@@ -2,7 +2,7 @@
 layout: post
 title:  "Nevtúra bejárás"
 date:   2018-09-08 09:25:30 +0200
-categories: nevtúra
+categories: nevtura
 ---
 Sziasztok!
 
