@@ -23,7 +23,7 @@ permalink: "/riddles/"
   for (var i = 0; i < localStorage.length; i++){
     var element = document.getElementById(localStorage.key(i));
 
-    if(sha256(MD5(localStorage.getItem(localStorage.key(i)))) == element.dataset.solution){
+    if(element != null && sha256(MD5(localStorage.getItem(localStorage.key(i)))) == element.dataset.solution){
       element.innerHTML = "[OK] " + element.innerHTML;
     }
   }
