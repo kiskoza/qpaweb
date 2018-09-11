@@ -22,6 +22,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections:
   riddles:
     output: true
+  achievements:
+    output: false
 
 # Build settings
 markdown: kramdown

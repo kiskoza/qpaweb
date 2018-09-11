@@ -1,0 +1,38 @@
+---
+layout: page
+title: "Achievements"
+permalink: "/achievements/"
+---
+
+<ul id="achi-list">
+  {% for achi in site.achievements %}
+    <li id="{{achi.id}}" data-teams="{{achi.teams}}">
+      <b>{{ achi.title }}</b>
+      - {{ achi.description }}
+    </li>
+  {% endfor %}
+</ul>
+
+<script src="/assets/team-selector.js"></script>
+
+<script>
+(function() {
+  var team = localStorage.getItem('team').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "");
+  var achis = document.getElementById("achi-list").getElementsByTagName("li");
+
+  for(var i = 0; i < achis.length; i++) {
+    var element = achis[i];
+    if( element.dataset.teams.split(',').some(function(str){ return str == team })){
+      localStorage.setItem(element.id, "OK")
+    }
+  }
+
+  for (var i = 0; i < localStorage.length; i++){
+    var element = document.getElementById(localStorage.key(i));
+
+    if(element != null && localStorage.getItem(element.id) == "OK"){
+      element.innerHTML = "[OK] " + element.innerHTML;
+    }
+  }
+})();
+</script>
