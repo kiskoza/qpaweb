@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nevtúra bejárás"
-date:   2018-09-10 12:34:30 +0200
+date:   2018-09-11 00:34:30 +0200
 categories: nevtura
 ---
 
