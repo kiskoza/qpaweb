@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Wargame"
+date:   2018-09-12 09:30:30 +0200
+categories: qpaweb
+---
+
+Sziasztok!
+
+Elindult az idei WarGame, regisztráció nélkül is elérhető a qpa.sch.bme.hu címen. Az első sikeres csapat jutalomban részesül!
+
+A rendezők
