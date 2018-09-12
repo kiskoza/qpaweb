@@ -41,8 +41,9 @@ permalink: "/points/"
     }
   };
 
-  var team = localStorage.getItem('team').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "");
+  var team = localStorage.getItem('team');
   teamname.innerHTML = team;
+  team = team.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "");
 
   var events = document.getElementById("event-list").getElementsByTagName("li");
   var summa = 0;
