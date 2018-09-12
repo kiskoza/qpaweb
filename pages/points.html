@@ -1,0 +1,61 @@
+---
+layout: page
+title: "Pontok"
+permalink: "/points/"
+---
+
+<h1>A(z) <span id="teamname">csapat</span> összpontszáma: <span id="sumpoint">0</span></h1>
+
+<ul id="event-list">
+  {% for event in site.events %}
+    <li id="point/{{event.id}}" data-maxpoint="{{event.maxpoint}}">
+      <b>{{ event.title }}</b>
+    </li>
+  {% endfor %}
+</ul>
+
+<script src="/assets/team-selector.js"></script>
+
+<script>
+(function() {
+  complain = function(point){
+    var maxpoint = parseInt(document.getElementById(point).dataset.maxpoint);
+    var current_point = parseInt(localStorage.getItem(point)) || 0;
+
+    var chance = 1/(-(current_point / maxpoint) - 1.5) + 0.9;
+    var random = Math.random();
+
+    if(random > chance) {
+      new_point = Math.floor(current_point + maxpoint / 3 * Math.random());
+      localStorage.setItem(point, new_point);
+      alert('Köszi, hogy jelezted, jár némi plusz pont');
+      location.reload();
+    } else {
+      if(Math.random() < 0.45) {
+        alert('Elég a reklamálásból, NULLA pont');
+        localStorage.setItem(point, 0);
+        location.reload();
+      } else {
+        alert('Bocsi, de erre nem jár több pont.');
+      }
+    }
+  };
+
+  var team = localStorage.getItem('team').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "");
+  teamname.innerHTML = team;
+
+  var events = document.getElementById("event-list").getElementsByTagName("li");
+  var summa = 0;
+
+  for(var i = 0; i < events.length; i++) {
+    var element = events[i];
+
+    var point = localStorage.getItem(element.id) || 0;
+    summa += parseInt(point);
+
+    element.innerHTML = element.innerHTML + " " + point + " / " + element.dataset.maxpoint + " <input type=\"button\" onClick=\"complain('" + element.id + "')\" value=\"Több pontot kérek!\">";
+  }
+
+  sumpoint.innerHTML = summa;
+})();
+</script>
