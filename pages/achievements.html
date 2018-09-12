@@ -17,21 +17,32 @@ permalink: "/achievements/"
 
 <script>
 (function() {
+  complain = function(achi){
+    random = Math.random();
+    if(random < 0.1) {
+      alert('Köszönjük, hogy jelezted, be is írtuk!')
+      localStorage.setItem(achi, 'OK');
+      location.reload();
+    } else if(random < 0.2) {
+      alert('Köszönjük, hogy jelezted, hamarosan utánajárunk');
+    } else {
+      alert('Kérlek küldj az e-mail címünkre pár igazoló képet, ami alapján ellenőrizni tudjuk.')
+    }
+  };
+
   var team = localStorage.getItem('team').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "");
   var achis = document.getElementById("achi-list").getElementsByTagName("li");
 
   for(var i = 0; i < achis.length; i++) {
     var element = achis[i];
     if( element.dataset.teams.split(',').some(function(str){ return str == team })){
-      localStorage.setItem(element.id, "OK")
+      localStorage.setItem(element.id, "OK");
     }
-  }
 
-  for (var i = 0; i < localStorage.length; i++){
-    var element = document.getElementById(localStorage.key(i));
-
-    if(element != null && localStorage.getItem(element.id) == "OK"){
+    if(localStorage.getItem(element.id) == "OK"){
       element.innerHTML = "[OK] " + element.innerHTML;
+    } else {
+      element.innerHTML = element.innerHTML + "<input type=\"button\" onClick=\"complain('" + element.id + "')\" value=\"Ez nekem is jár!\">";
     }
   }
 })();
