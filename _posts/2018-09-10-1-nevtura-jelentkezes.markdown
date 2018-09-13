@@ -10,4 +10,4 @@ Sziasztok!
 
 A rendezők
 
-[doodle-jelentkezes]: https://doodle.com/poll/mgqbapthe276h6py
+[doodle-jelentkezes]: https://qpa.sch.bme.hu/events/2
