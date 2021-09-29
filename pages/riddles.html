@@ -6,13 +6,26 @@ permalink: "/riddles/"
 
 <div>A Riddles oldal még <i>BÉTA</i> fázisban van, segíts te is a fejlesztésében. Mondd el, mi kéne, mi hiányzik, hogyan valósítanád meg: <a href="https://github.com/kiskoza/qpaweb">github</a></div>
 
+<h4>2015 - Made in Fluffy</h4>
 <ol>
   {% for riddle in site.riddles %}
-    <li id="{{riddle.id}}" data-solution="{{riddle.sha256}}">
-      <a href="{{ riddle.url }}">{{ riddle.title }}</a>
-    </li>
+    {% if riddle.year == 2015 %}
+      <li id="{{riddle.id}}" data-solution="{{riddle.sha256}}">
+        <a href="{{ riddle.url }}">{{ riddle.title }}</a>
+      </li>
+    {% endif %}
   {% endfor %}
-  <li>Hamarosan érkeznek még...</li>
+</ol>
+
+<h4>2013 - Good Old Days</h4>
+<ol>
+  {% for riddle in site.riddles %}
+    {% if riddle.year == 2013 %}
+      <li id="{{riddle.id}}" data-solution="{{riddle.sha256}}">
+        <a href="{{ riddle.url }}">{{ riddle.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
 </ol>
 
 <script src="/assets/md5.js"></script>
