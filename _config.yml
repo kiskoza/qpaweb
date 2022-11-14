@@ -17,7 +17,7 @@ title: Közösségi Qpaweb 2038 | 67. Kiscicák és Barnamedvék Qpa
 email: qpa@sch.bme.hu
 description: >- # this means to ignore newlines until "baseurl:"
   Ésszel de halálig.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/qpaweb" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections:
   achievements:
@@ -36,11 +36,11 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
-#   - vendor/bundle/
+  - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/

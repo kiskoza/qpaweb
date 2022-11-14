@@ -11,7 +11,7 @@ permalink: "/riddles/"
   {% for riddle in site.riddles %}
     {% if riddle.year == 2015 %}
       <li id="{{riddle.id}}" data-solution="{{riddle.sha256}}">
-        <a href="{{ riddle.url }}">{{ riddle.title }}</a>
+        <a href="{{ riddle.url | relative_url }}">{{ riddle.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
@@ -28,8 +28,8 @@ permalink: "/riddles/"
   {% endfor %}
 </ol>
 
-<script src="/assets/md5.js"></script>
-<script src="/assets/sha256.js"></script>
+<script src="../assets/md5.js"></script>
+<script src="../assets/sha256.js"></script>
 
 <script>
 (function() {
